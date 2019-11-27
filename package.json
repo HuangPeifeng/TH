@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve -o",
-    "build": "ng build",
+    "start": "ng serve -o --base-href /TH/",
+    "build": "ng build --prod --base-href /TH/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "publish": "npm run build && npx ngh --dir=dist/TH"
   },
   "private": true,
   "dependencies": {
