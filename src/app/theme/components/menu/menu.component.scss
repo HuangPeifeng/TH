@@ -1,0 +1,35 @@
+.menu-layout {
+  width: 250px;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+
+  .logo-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #505050;
+    margin: 0 1em 1em 1em;
+
+    img {
+      width: 80px;
+    }
+  }
+
+  .list-layout {
+    .item-block {
+      padding: 1em;
+      text-align: center;
+      cursor: pointer;
+      transition: .3s ease-in-out;
+
+      &:hover {
+        background: linear-gradient(0deg, #9e6e12 0%, #efb221 100%);
+      }
+
+      &.active {
+        background: linear-gradient(0deg, #9e6e12 0%, #efb221 100%);
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<div class="menu-layout">
+  <div class="logo-layout">
+    <img src="assets/images/logo.png">
+  </div>
+  <div class="lang-layout">
+    <!-- 多語系 -->
+  </div>
+  <div class="list-layout">
+    <div class="item-block" *ngFor="let item of menuList" [routerLink]="item.url" routerLinkActive="active">
+      {{ item.name }}
+    </div>
+  </div>
+</div>
