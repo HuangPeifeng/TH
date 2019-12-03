@@ -1,0 +1,18 @@
+<div class="saxophones-bg">
+  <div class="block-bg"></div>
+</div>
+<div class="saxophones-layout">
+  <div class="saxophones-title">薩克斯風</div>
+  <div class="saxophones-block">
+    <div class="menu">
+      <div class="item" *ngFor="let item of menu; let index = index" [ngClass]="{ active: selectedIndex === index }">
+        {{ item.name }}
+      </div>
+    </div>
+    <div class="content">
+      <div class="image-block" *ngFor="let item of [1,2,3,4,5,6,7]">
+        <img src="assets/images/01.jpg">
+      </div>
+    </div>
+  </div>
+</div>

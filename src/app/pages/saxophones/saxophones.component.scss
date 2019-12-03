@@ -1,0 +1,111 @@
+.saxophones-bg {
+  width: calc(100% - 250px);
+  height: 100%;
+  position: fixed;
+  color: #fff;
+  background-image: url("/assets/images/6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .block-bg {
+    width: calc(100% - 250px);
+    height: 100%;
+    position: fixed;
+    background-image: url("/assets/images/img-cover.png");
+    background-repeat: repeat;
+    background-position: center;
+  }
+}
+
+.saxophones-layout {
+  position: absolute;
+  color: #fff;
+  width: calc(100% - 350px);
+  height: calc(100% - 100px);
+  padding: 50px;
+  overflow-y: auto;
+
+  .saxophones-title {
+    font-size: 5rem;
+    margin-bottom: 30px;
+  }
+
+  .saxophones-block {
+    display: flex;
+    width: 100%;
+    .menu {
+      width: 20%;
+      padding: 10px;
+      .item {
+        border: 1px solid #fff;
+        margin-bottom: 10px;
+        line-height: 2.5;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .3 ease-in-out;
+
+        &.active {
+          background-color: #fff;
+          color: #000;
+          border: 3px solid #ccc;
+        }
+
+        &:hover {
+          background-color: #fff;
+          color: #000;
+        }
+      }
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+      column-gap: 3rem;
+      column-count: 3;
+      .image-block {
+        margin-bottom: 15px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 15px;
+        display: inline-block;
+        img {
+          width: 100%;
+          object-fit: cover;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.padding-1rem {
+  padding: 1rem;
+}
+
+.font-size-25rem {
+  font-size: 2.5rem;
+}
+
+.img-width-100 {
+  width: 100%;
+}
+
+.w-50-2rem {
+  width: calc((100% / 2) - 2rem);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.mr-b-1em {
+  margin-bottom: 1em;
+}
