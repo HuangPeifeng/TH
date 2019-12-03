@@ -1,0 +1,19 @@
+<div class="accessories-bg">
+  <div class="block-bg"></div>
+</div>
+<div class="accessories-layout">
+  <div class="accessories-title">配件</div>
+  <div class="menu">
+    <div class="item" [ngClass]="{ active: selectedIndex === 0 }">全部</div>
+    <div class="flex">
+      <div class="item width-50" *ngFor="let item of menu" [ngClass]="{ active: selectedIndex === index }">
+        {{ item.name }}
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="image-block" *ngFor="let item of [1,2,3,4,5,6,7,8,9]">
+      <img src="assets/images/1.jpg">
+    </div>
+  </div>
+</div>
