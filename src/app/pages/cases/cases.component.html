@@ -6,7 +6,7 @@
   <div class="menu">
     <div class="item" [ngClass]="{ active: selectedIndex === 0 }">全部</div>
     <div class="col-4">
-      <div class="item" *ngFor="let item of menu" [ngClass]="{ active: selectedIndex === index }">
+      <div class="item" *ngFor="let item of menu; let index = index" [ngClass]="{ active: selectedIndex === index }">
         {{ item.name }}
       </div>
     </div>
