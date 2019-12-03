@@ -5,10 +5,14 @@
   <div class="news-title">最新消息</div>
   <div class="content">
     <div class="image-block" *ngFor="let item of [1,2,3]">
-      <img src="assets/images/news.jpg">
+      <img src="assets/images/news.jpg" (click)="isPopupOpen = true">
       <div class="title">News,</div>
       <div>We are very excited to announce that we are starting to supply wood rollers, key touches and end plugs for your saxophones. Please contact us for more details!</div>
       <div class="date">2019-12-03</div>
     </div>
   </div>
+</div>
+
+<div class="popup" *ngIf="isPopupOpen" (click)="isPopupOpen = false">
+  <img src="assets/images/news.jpg">
 </div>

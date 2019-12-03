@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lor.component.scss']
 })
 export class LorComponent implements OnInit {
+  isPopupOpen = false;
 
   constructor() { }
 

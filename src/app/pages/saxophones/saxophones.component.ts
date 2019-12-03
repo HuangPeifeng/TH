@@ -16,6 +16,8 @@ export class SaxophonesComponent implements OnInit {
   ];
   selectedIndex = 0;
 
+  isPopupOpen = false;
+
   constructor() { }
 
   ngOnInit() {

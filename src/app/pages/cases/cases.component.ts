@@ -14,6 +14,8 @@ export class CasesComponent implements OnInit {
   ];
   selectedIndex = 0;
 
+  isPopupOpen = false;
+
   constructor() { }
 
   ngOnInit() {

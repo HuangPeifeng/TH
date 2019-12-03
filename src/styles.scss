@@ -6,6 +6,25 @@ body {
   overflow: hidden;
 }
 
+.popup {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000000cc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;

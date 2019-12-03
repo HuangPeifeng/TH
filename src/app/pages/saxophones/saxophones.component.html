@@ -10,9 +10,13 @@
       </div>
     </div>
     <div class="content">
-      <div class="image-block" *ngFor="let item of [1,2,3,4,5,6,7]">
+      <div class="image-block" *ngFor="let item of [1,2,3,4,5,6,7]" (click)="isPopupOpen = true">
         <img src="assets/images/01.jpg">
       </div>
     </div>
   </div>
+</div>
+
+<div class="popup" *ngIf="isPopupOpen" (click)="isPopupOpen = false">
+  <img src="assets/images/01.jpg">
 </div>
