@@ -6,7 +6,7 @@
   <div class="menu">
     <div class="item" [ngClass]="{ active: selectedIndex === 0 }">全部</div>
     <div class="flex">
-      <div class="item width-50" *ngFor="let item of menu; let index = index" [ngClass]="{ active: selectedIndex === index }">
+      <div class="item width-50" *ngFor="let item of menu; let index = index" [ngClass]="{ active: selectedIndex === index + 1 }">
         {{ item.name }}
       </div>
     </div>
