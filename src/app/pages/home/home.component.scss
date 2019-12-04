@@ -19,6 +19,18 @@
     padding: 50px;
     background-color: #0000004d;
     color: #fff;
+
+    @media (max-width: 991px) {
+      padding: 30px;
+      top: 80px;
+      left: 0;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 2rem;
+      padding: 10px;
+      top: 80px;
+    }
   }
 
   .content-block {
@@ -30,5 +42,11 @@
     padding: 30px;
     background: #0000004d;
     color: #fff;
+
+    @media (max-width: 576px) {
+      top: 200px;
+      font-size: 1.5rem;
+      padding: 10px;
+    }
   }
 }
