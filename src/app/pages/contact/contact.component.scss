@@ -12,6 +12,11 @@
     background-repeat: no-repeat;
     top: 0;
     left: 250px;
+
+    @media (max-width: 991px) {
+      width: 100%;
+      left: 0;
+    }
   }
 
   .block-bg {
@@ -23,6 +28,11 @@
     background-position: center;
     top: 0;
     left: 250px;
+
+    @media (max-width: 991px) {
+      width: 100%;
+      left: 0;
+    }
   }
 }
 
@@ -34,9 +44,17 @@
   padding: 50px;
   overflow-y: auto;
 
+  @media (max-width: 991px) {
+    width: calc(100% - 100px);
+  }
+
   .contact-title {
     font-size: 5rem;
     margin-bottom: 30px;
+
+    @media (max-width: 576px) {
+      font-size: 3rem;
+    }
   }
 
   .contact-info {
@@ -51,6 +69,10 @@
 
       img {
         margin-right: 5px;
+      }
+
+      span {
+        word-break: break-all;
       }
     }
   }
