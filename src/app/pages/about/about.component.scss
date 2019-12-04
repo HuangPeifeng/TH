@@ -47,6 +47,10 @@
   .about-title {
     font-size: 5rem;
     margin-bottom: 30px;
+
+    @media (max-width: 576px) {
+      font-size: 3rem;
+    }
   }
 
   .about-row {
