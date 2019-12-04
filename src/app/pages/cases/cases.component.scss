@@ -74,6 +74,7 @@
     margin-top: 1em;
     column-gap: 3rem;
     column-count: 3;
+    width: calc(100% - 2rem);
 
     @media (max-width: 991px) {
       column-count: 2;
