@@ -1,5 +1,10 @@
 <div class="main-layout">
-  <app-menu></app-menu>
+  <div class="hamberger" *ngIf="isPhone" (click)="openMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <app-menu [isPhone]="isPhone" [showMenu]="showMenu" (closeMenu)="closeMenu()"></app-menu>
   <div class="main-block">
     <router-outlet></router-outlet>
   </div>

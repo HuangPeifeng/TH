@@ -1,4 +1,8 @@
-<div class="menu-layout">
+<div class="menu-layout" [ngClass]="{ 'isPhone': isPhone, 'show': showMenu }">
+  <div class="close" *ngIf="isPhone" [ngClass]="{ 'show': showMenu }" (click)="close()">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
   <div class="logo-layout">
     <img src="assets/images/logo.png">
   </div>

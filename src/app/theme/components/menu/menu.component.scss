@@ -3,6 +3,60 @@
   height: 100vh;
   background-color: #000;
   color: #fff;
+  transition: .3s ease-in-out;
+  z-index: 101;
+
+  &.isPhone {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+  }
+
+  &.show {
+    left: 0;
+  }
+
+  .close {
+    position: fixed;
+    top: 0;
+    right: calc(100vw + 50px);
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    z-index: 102;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+
+    &.show {
+      right: 0;
+    }
+
+    &:hover {
+      div {
+        box-shadow: 0 0 10px #ccc;
+      }
+    }
+
+    div {
+      width: 100%;
+      height: 5px;
+      background-color: #ffffff;
+      box-shadow: 0 0 3px #ccc;
+      border-radius: 10px;
+      position: absolute;
+      box-shadow: 0 0 3px #ccc;
+      transition: 0.3s ease-in-out;
+
+      &.left {
+        transform: rotate(45deg) translate(15px, 15px);
+      }
+
+      &.right {
+        transform: rotate(-45deg) translate(-15px, 15px);
+      }
+    }
+  }
 
   .logo-layout {
     display: flex;

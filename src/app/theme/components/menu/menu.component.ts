@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+  @Input() isPhone;
+  @Input() showMenu;
+  @Output() closeMenu = new EventEmitter();
+
   menuList = [
     { name: '首頁', url: '/home' },
     { name: '關於我們', url: '/about' },
@@ -20,6 +24,10 @@ export class MenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  close() {
+    this.closeMenu.emit();
   }
 
 }

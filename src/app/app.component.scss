@@ -1,14 +1,44 @@
 .main-layout {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 
-    .main-block {
-      width: 100%;
-      height: 100vh;
-      overflow: auto;
-      background-color: #343a40;
+  .hamberger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+
+    &:hover {
+      div {
+        box-shadow: 0 0 10px #ccc;
+      }
     }
+
+    div {
+      width: 100%;
+      height: 5px;
+      background-color: #ffffff;
+      box-shadow: 0 0 3px #ccc;
+      border-radius: 10px;
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  .main-block {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: #343a40;
+  }
 }
