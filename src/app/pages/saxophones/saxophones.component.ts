@@ -23,7 +23,9 @@ export class SaxophonesComponent implements OnInit {
     { category: '中音', fileName: 'sax-mid3.jpg' },
     { category: '中音', fileName: 'sax-mid4.jpg' },
     { category: '中音', fileName: 'sax-mid5.jpg' },
-    { category: '中音', fileName: 'sax-mid6.jpg' }
+    { category: '中音', fileName: 'sax-mid6.jpg' },
+    { category: '中音', fileName: 'sax-mid7.jpg' },
+    { category: '中音', fileName: 'sax-mid8.jpg' }
   ];
   subList = this.list;
 
