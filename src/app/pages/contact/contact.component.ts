@@ -6,7 +6,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit, OnDestroy {
-  cover = '/assets/images/sax/sax-high1.jpg';
+  cover = '/TH/assets/images/sax/sax-high1.jpg';
   count = 0;
   list = [1, 2, 3, 4, 5];
   opacity = 1;
@@ -25,7 +25,7 @@ export class ContactComponent implements OnInit, OnDestroy {
         if (this.opacity < 0) {
           this.opacity = 0;
           clearInterval(isOpacity);
-          this.cover = `/assets/images/sax/sax-high${this.list[this.count]}.jpg`;
+          this.cover = `/TH/assets/images/sax/sax-high${this.list[this.count]}.jpg`;
           const noOpacity = setInterval(() => {
             this.opacity = this.opacity + 0.1;
             if (this.opacity > 1) {
