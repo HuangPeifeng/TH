@@ -19,7 +19,7 @@ export class MenuComponent implements OnInit {
     { name: 'Toois', url: '/toois' },
     // { name: 'LOR', url: '/lor' },
     { name: '聯絡我們', url: '/contact' },
-    { name: '最新消息', url: '/news' }
+    // { name: '最新消息', url: '/news' }
   ];
 
   constructor() { }
