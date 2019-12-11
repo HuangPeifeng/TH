@@ -14,7 +14,7 @@ export class CasesComponent implements OnInit {
   ];
   list = [
     { url: 'case1.jpg' },
-    { url: 'case2.jpg' },
+    // { url: 'case2.jpg' },
     { url: 'case3.jpg' },
     { url: 'case4.jpg' },
     { url: 'case5.jpg' },
