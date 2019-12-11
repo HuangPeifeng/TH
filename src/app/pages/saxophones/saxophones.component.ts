@@ -9,11 +9,15 @@ export class SaxophonesComponent implements OnInit {
   menu = [
     { name: '全部' },
     { name: '高音' },
-    { name: '中音' }
+    { name: '中音' },
+    { name: '次中音' }
   ];
   list = [
     { category: '高音', fileName: 'sax-high1.jpg' },
     { category: '高音', fileName: 'sax-high2.jpg' },
+    { category: '高音', fileName: 'sax-high3.jpg' },
+    { category: '高音', fileName: 'sax-high4.jpg' },
+    { category: '高音', fileName: 'sax-high5.jpg' },
     { category: '中音', fileName: 'sax-mid1.jpg' },
     { category: '中音', fileName: 'sax-mid2.jpg' },
     { category: '中音', fileName: 'sax-mid3.jpg' },
@@ -41,6 +45,9 @@ export class SaxophonesComponent implements OnInit {
         break;
       case '中音':
         this.subList = this.list.filter(res => res.category === '中音');
+        break;
+      case '次中音':
+        this.subList = this.list.filter(res => res.category === '次中音');
         break;
       default:
         this.subList = this.list;
