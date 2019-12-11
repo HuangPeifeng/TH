@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'cases', loadChildren: () => import('./pages/cases/cases.module').then(m => m.CasesModule) },
   { path: 'accessories', loadChildren: () => import('./pages/accessories/accessories.module').then(m => m.AccessoriesModule) },
   { path: 'lor', loadChildren: () => import('./pages/lor/lor.module').then(m => m.LorModule) },
+  { path: 'toois', loadChildren: () => import('./pages/toois/toois.module').then(m => m.TooisModule) },
   { path: 'contact', loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule) },
   { path: 'news', loadChildren: () => import('./pages/news/news.module').then(m => m.NewsModule) }
 ];

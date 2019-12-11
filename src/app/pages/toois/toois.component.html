@@ -1,0 +1,23 @@
+<div class="saxophones-bg">
+  <div class="block-bg"></div>
+</div>
+<div class="saxophones-layout">
+  <div class="saxophones-title">Toois</div>
+  <div class="saxophones-block">
+    <!-- <div class="menu">
+      <div class="item" *ngFor="let item of menu; let index = index" [ngClass]="{ active: selectedIndex === index }"
+        (click)="changeCategory(item, index)">
+        {{ item.name }}
+      </div>
+    </div> -->
+    <div class="content">
+      <div class="image-block" *ngFor="let item of list" (click)="openPopup(item)">
+        <img [src]="'assets/images/toois/' + item.url">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" *ngIf="isPopupOpen" (click)="closePopup()">
+  <img [src]="'assets/images/toois/' + selected.url">
+</div>

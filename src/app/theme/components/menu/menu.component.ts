@@ -16,6 +16,7 @@ export class MenuComponent implements OnInit {
     { name: 'Saxophone', url: '/saxophones' },
     { name: '箱子', url: '/cases' },
     { name: '工廠及組裝零配件', url: '/accessories' },
+    { name: 'Toois', url: '/toois' },
     // { name: 'LOR', url: '/lor' },
     { name: '聯絡我們', url: '/contact' },
     { name: '最新消息', url: '/news' }
