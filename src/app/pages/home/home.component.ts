@@ -8,7 +8,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 export class HomeComponent implements OnInit, OnDestroy {
   cover = '/TH/assets/images/bg/1.jpg';
   count = 0;
-  list = [1, 2, 3, 4, 5];
+  list = [1, 2, 3, 4, 5, 6];
   opacity = 1;
   $interval = null;
 
@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.$interval = setInterval(() => {
       this.count++;
-      if (this.count > 4) {
+      if (this.count > 5) {
         this.count = 0;
       }
       const isOpacity = setInterval(() => {
