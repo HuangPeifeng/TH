@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -22,9 +23,27 @@ export class MenuComponent implements OnInit {
     // { name: '最新消息', url: '/news' }
   ];
 
-  constructor() { }
+  nowPath;
+
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit() {
+    this.router.events.subscribe(e => {
+      if (e instanceof NavigationEnd) {
+        this.nowPath = e.url;
+      }
+    });
+  }
+
+  goLink(item) {
+    this.router
+      .navigate([item.url])
+      .then(() => {
+        this.close();
+      });
   }
 
   close() {

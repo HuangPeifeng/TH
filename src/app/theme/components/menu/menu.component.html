@@ -10,7 +10,7 @@
     <!-- 多語系 -->
   </div>
   <div class="list-layout">
-    <div class="item-block" *ngFor="let item of menuList" [routerLink]="item.url" routerLinkActive="active">
+    <div class="item-block" *ngFor="let item of menuList" [ngClass]="{ 'active': nowPath === item.url }" (click)="goLink(item)">
       {{ item.name }}
     </div>
   </div>
