@@ -1,4 +1,11 @@
 {
+  "MENU": {
+    "HOME": "首頁",
+    "ABOUT": "關於我們",
+    "ACCESSORIES": "工廠及組裝零配件",
+    "CASES": "箱子",
+    "CONTACT": "聯絡我們"
+  },
   "HOME": {
     "TITLE": "敬愛的企業主及同業行銷夥伴",
     "WELCOME1": "首先歡迎進入本公司網頁瀏覽。",

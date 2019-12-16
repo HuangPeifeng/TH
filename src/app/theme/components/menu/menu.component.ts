@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-menu',
@@ -24,11 +25,13 @@ export class MenuComponent implements OnInit {
   ];
 
   nowPath;
+  lang = 'zh-tw';
 
   constructor(
     private router: Router,
-    private route: ActivatedRoute
-  ) { }
+    private translate: TranslateService
+  ) {
+  }
 
   ngOnInit() {
     this.router.events.subscribe(e => {
@@ -38,9 +41,14 @@ export class MenuComponent implements OnInit {
     });
   }
 
-  goLink(item) {
+  changeTranslate(lang) {
+    this.lang = lang;
+    this.translate.use(lang);
+  }
+
+  goLink(url) {
     this.router
-      .navigate([item.url])
+      .navigate([url])
       .then(() => {
         this.close();
       });

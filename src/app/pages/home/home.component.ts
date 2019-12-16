@@ -13,8 +13,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   opacity = 1;
   $interval = null;
 
-  constructor(translate: TranslateService) {
-  }
+  constructor() { }
 
   ngOnInit() {
     this.$interval = setInterval(() => {

@@ -1,4 +1,11 @@
 {
+  "MENU": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "ACCESSORIES": "Tools",
+    "CASES": "Cases",
+    "CONTACT": "Contact Us"
+  },
   "HOME": {
     "TITLE": "Dear businesses operators and the profession marketing partners,",
     "WELCOME1": "Welcome visiting our website.",

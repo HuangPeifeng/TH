@@ -6,12 +6,38 @@
   <div class="logo-layout">
     <img src="assets/images/logo.png">
   </div>
+  <div class="list-layout">
+    <div class="item-block" [ngClass]="{ 'active': nowPath === '/home' }" (click)="goLink('/home')">
+      {{ 'MENU.HOME' | translate }}
+    </div>
+    <div class="item-block" [ngClass]="{ 'active': nowPath === '/about' }" (click)="goLink('/about')">
+      {{ 'MENU.ABOUT' | translate }}
+    </div>
+    <div class="item-block" [ngClass]="{ 'active': nowPath === '/accessories' }" (click)="goLink('/accessories')">
+      {{ 'MENU.ACCESSORIES' | translate }}
+    </div>
+    <div class="item-block" [ngClass]="{ 'active': nowPath === '/saxophones' }" (click)="goLink('/saxophones')">
+      Saxophone
+    </div>
+    <div class="item-block" [ngClass]="{ 'active': nowPath === '/cases' }" (click)="goLink('/cases')">
+      {{ 'MENU.CASES' | translate }}
+    </div>
+    <div class="item-block" [ngClass]="{ 'active': nowPath === '/toois' }" (click)="goLink('/toois')">
+      Toois
+    </div>
+    <div class="item-block" [ngClass]="{ 'active': nowPath === '/contact' }" (click)="goLink('/contact')">
+      {{ 'MENU.CONTACT' | translate }}
+    </div>
+  </div>
   <div class="lang-layout">
     <!-- 多語系 -->
-  </div>
-  <div class="list-layout">
-    <div class="item-block" *ngFor="let item of menuList" [ngClass]="{ 'active': nowPath === item.url }" (click)="goLink(item)">
-      {{ item.name }}
+    <div (click)="changeTranslate('zh-tw')" *ngIf="lang === 'en'">
+      <img src="assets/images/taiwan.png">
+      繁體中文
+    </div>
+    <div (click)="changeTranslate('en')" *ngIf="lang === 'zh-tw'">
+      <img src="assets/images/english.png">
+      English
     </div>
   </div>
 </div>
