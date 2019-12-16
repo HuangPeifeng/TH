@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,13 @@ export class AppComponent implements OnInit {
   title = 'TH';
   isPhone = false;
   showMenu = false;
+
+  constructor(
+    translate: TranslateService
+  ) {
+    translate.setDefaultLang('zh-tw');
+    translate.use('zh-tw');
+  }
 
   @HostListener('window:resize')
   onResize() {

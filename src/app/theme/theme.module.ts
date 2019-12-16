@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenuComponent } from './components/menu/menu.component';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -9,10 +10,12 @@ import { RouterModule } from '@angular/router';
   declarations: [MenuComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    TranslateModule
   ],
   exports: [
-    MenuComponent
+    MenuComponent,
+    TranslateModule
   ]
 })
 export class ThemeModule { }
