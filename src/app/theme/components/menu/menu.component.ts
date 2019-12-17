@@ -25,7 +25,7 @@ export class MenuComponent implements OnInit {
   ];
 
   nowPath;
-  lang = 'zh-tw';
+  lang;
 
   constructor(
     private router: Router,
@@ -39,11 +39,17 @@ export class MenuComponent implements OnInit {
         this.nowPath = e.url;
       }
     });
+    if (sessionStorage.getItem('lang')) {
+      this.lang = sessionStorage.getItem('lang');
+    } else {
+      this.lang = 'zh-tw';
+    }
   }
 
   changeTranslate(lang) {
     this.lang = lang;
     this.translate.use(lang);
+    sessionStorage.setItem('lang', lang);
   }
 
   goLink(url) {

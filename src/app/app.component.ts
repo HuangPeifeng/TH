@@ -15,7 +15,11 @@ export class AppComponent implements OnInit {
     translate: TranslateService
   ) {
     translate.setDefaultLang('zh-tw');
-    translate.use('zh-tw');
+    if (sessionStorage.getItem('lang')) {
+      translate.use(sessionStorage.getItem('lang'));
+    } else {
+      translate.use('zh-tw');
+    }
   }
 
   @HostListener('window:resize')
