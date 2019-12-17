@@ -1,0 +1,42 @@
+{
+  "MENU": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "ACCESSORIES": "Tools",
+    "CASES": "Cases",
+    "CONTACT": "Contact Us"
+  },
+  "HOME": {
+    "TITLE": "Dear businesses operators and the profession marketing partners,",
+    "WELCOME1": "Welcome visiting our website.",
+    "WELCOME2": "Saxophone＆Toois are profession develop and wholesale in Taiwan. They are trustworthy and recommended for community. The company's production and processing locations are located in Taichung and Changhua. With high-tech innovation & classic Sax neck, the air flow is smooth and can play briskly. What a good musical instrument not to be missed!"
+  },
+  "ABOUT": {
+    "TITLE": "About",
+    "COMPANY": "T-H Industrial Co., Ltd",
+    "CONTENT1": "Dear businesses operators,",
+    "CONTENT2": "Welcome visiting our website.We are located in Central Taiwan, specializing in the development of Saxophone & Toois trade and wholesalers, which is worthy of trust in the community.",
+    "CONTENT3": "The company team originated from the development of metal processing and transformation of precision hand tools in 2012. A group of music-loving companies that love Saxophone's \"Musical Instrument\" is more rigorous in the process and surface treatment of the instrument tube and neck tube.",
+    "CONTENT4": "In order to create the Bel Canto musical instrument, after joining Taichung Huli Musical Instrument Cultural Association, the team created a Saxophone brand with many production and sales owners, and established T-H Industrial Co., Ltd in October 2019. The production and marketing industry counseling has created a high-quality bel canto with the company name: Tong Hao \"Jin Tong Gao\", and has gone international.",
+    "CONTENT5": "The Saxophone developed by our company is a brand for Taiwanese production, which should be supplied to domestic and foreign counterparts at the most reasonable price.",
+    "CONTENT6": "If you are interested in our products, the owners are welcome to contact us to discuss high-quality customized products.",
+    "NAME": "President - Peter Huang"
+  },
+  "ACCESSORIES": {
+    "TITLE": "Tools"
+  },
+  "SAX": {
+    "NAME1": "All",
+    "NAME2": "Soprano",
+    "NAME3": "Alto",
+    "NAME4": "Tenor"
+  },
+  "CASE": {
+    "TITLE": "Cases"
+  },
+  "CONTACT": {
+    "TITLE": "Contact Us",
+    "COMPANY": "T-H Industrial Co., Ltd",
+    "ADDRESS": "1F., No. 18, Xiaode St., Changhua City, Changhua County 500, Taiwan (R.O.C.)"
+  }
+}
