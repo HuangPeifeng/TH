@@ -33,5 +33,10 @@
   },
   "CASE": {
     "TITLE": "Cases"
+  },
+  "CONTACT": {
+    "TITLE": "Contact Us",
+    "COMPANY": "T-H Industrial Co., Ltd",
+    "ADDRESS": "1F., No. 18, Xiaode St., Changhua City, Changhua County 500, Taiwan (R.O.C.)"
   }
 }

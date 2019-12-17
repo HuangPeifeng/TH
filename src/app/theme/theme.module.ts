@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { MenuComponent } from './components/menu/menu.component';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { SafePipe } from './pipes/safe.pipe';
 
 
 
 @NgModule({
-  declarations: [MenuComponent],
+  declarations: [MenuComponent, SafePipe],
   imports: [
     CommonModule,
     RouterModule,
@@ -15,7 +16,8 @@ import { TranslateModule } from '@ngx-translate/core';
   ],
   exports: [
     MenuComponent,
-    TranslateModule
+    TranslateModule,
+    SafePipe
   ]
 })
 export class ThemeModule { }
