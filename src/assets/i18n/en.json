@@ -24,5 +24,11 @@
   },
   "ACCESSORIES": {
     "TITLE": "Tools"
+  },
+  "SAX": {
+    "NAME1": "All",
+    "NAME2": "Soprano",
+    "NAME3": "Alto",
+    "NAME4": "Tenor"
   }
 }

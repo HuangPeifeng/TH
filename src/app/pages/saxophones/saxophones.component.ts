@@ -41,7 +41,7 @@ export class SaxophonesComponent implements OnInit {
   ];
   subList = this.list;
 
-  selectedIndex = 0;
+  selectedName = '全部';
 
   isPopupOpen = false;
   selected = null;
@@ -51,9 +51,9 @@ export class SaxophonesComponent implements OnInit {
   ngOnInit() {
   }
 
-  changeCategory(item, index) {
-    this.selectedIndex = index;
-    switch (item.name) {
+  changeCategory(name) {
+    this.selectedName = name;
+    switch (name) {
       case '高音':
         this.subList = this.list.filter(res => res.category === '高音');
         break;

@@ -5,8 +5,17 @@
   <div class="saxophones-title">Saxophone</div>
   <div class="saxophones-block">
     <div class="menu">
-      <div class="item" *ngFor="let item of menu; let index = index" [ngClass]="{ active: selectedIndex === index }" (click)="changeCategory(item, index)">
-        {{ item.name }}
+      <div class="item" [ngClass]="{ active: selectedName === '全部' }" (click)="changeCategory('全部')">
+        {{ 'SAX.NAME1' | translate }}
+      </div>
+      <div class="item" [ngClass]="{ active: selectedName === '高音' }" (click)="changeCategory('高音')">
+        {{ 'SAX.NAME2' | translate }}
+      </div>
+      <div class="item" [ngClass]="{ active: selectedName === '中音' }" (click)="changeCategory('中音')">
+        {{ 'SAX.NAME3' | translate }}
+      </div>
+      <div class="item" [ngClass]="{ active: selectedName === '次中音' }" (click)="changeCategory('次中音')">
+        {{ 'SAX.NAME4' | translate }}
       </div>
     </div>
     <div class="content">
