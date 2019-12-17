@@ -30,5 +30,8 @@
     "NAME2": "Soprano",
     "NAME3": "Alto",
     "NAME4": "Tenor"
+  },
+  "CASE": {
+    "TITLE": "Cases"
   }
 }
